@@ -4,17 +4,17 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "문제 출처 : https://school.programmers.co.kr/learn/courses/30/lessons/144853"
+    "문제 출처 : https://school.programmers.co.kr/learn/courses/30/lessons/151136"
    ]
   },
   {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "SELECT BOOK_ID, DATE_FORMAT(published_date, '%Y-%m-%d') PUBLISHED_DATE\n",
-    "from book\n",
-    "WHERE YEAR(published_date) = 2021 AND CATEGORY = '인문'\n",
-    "ORDER BY PUBLISHED_DATE ASC"
+    "SELECT ROUND(AVG(DAILY_FEE), 0) AVERAGE_FEE\n",
+    "FROM CAR_RENTAL_COMPANY_CAR\n",
+    "WHERE CAR_TYPE = \"SUV\"\n",
+    "GROUP BY CAR_TYPE"
    ]
   }
  ],
